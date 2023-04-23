@@ -10,15 +10,47 @@
 [[social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+url = "https://github.com/vascoguita"
 
 [social.params]
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+identifier = "whatsapp"
+name = "WhatsApp"
+url = "https://wa.me/33766681446"
 
 [social.params]
-icon = "brand-twitter"
+icon = "brand-whatsapp"
+
+[[social]]
+identifier = "mail"
+name = "Email"
+url = "mailto:vasco@guita.org"
+
+[social.params]
+icon = "mail"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/vasco-guita"
+
+[social.params]
+icon = "brand-linkedin"
+
+[[social]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/vasco.guita"
+
+[social.params]
+icon = "brand-instagram"
+
+[[social]]
+identifier = "facebook"
+name = "Facebook"
+url = "https://www.facebook.com/vasco.guita"
+
+[social.params]
+icon = "brand-facebook"
