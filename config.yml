@@ -1,0 +1,88 @@
+baseurl: https://vasco.guita.org
+languageCode: en-us
+paginate: 5
+title: Vasco Guita
+disqusShortname: vascoguita
+
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+  highlight:
+    noClasses: false
+    guessSyntax: true
+    lineNos: true
+
+menu:
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/vascoguita
+      params:
+        icon: brand-github
+    - identifier: whatsapp
+      name: WhatsApp
+      url: https://wa.me/33766681446
+      params:
+        icon: brand-whatsapp
+    - identifier: mail
+      name: Email
+      url: mailto:vasco@guita.org
+      params:
+        icon: mail
+    - identifier: linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/in/vasco-guita
+      params:
+        icon: brand-linkedin
+    - identifier: instagram
+      name: Instagram
+      url: https://www.instagram.com/vasco.guita
+      params:
+        icon: brand-instagram
+    - identifier: facebook
+      name: Facebook
+      url: https://www.facebook.com/vasco.guita
+      params:
+        icon: brand-facebook
+
+module:
+  imports:
+    - path: github.com/CaiJimmy/hugo-theme-stack/v3
+
+params:
+  favicon: /favicon.ico
+  footer:
+    since: 2023
+  sidebar:
+    emoji: 🚀
+    subtitle: Software Engineer at CERN with a passion for traveling and making stuff
+    avatar:
+      src: img/avatar.jpg
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
+    page:
+      - type: toc
+
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+related:
+  includeNewer: true
+  threshold: 60
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
