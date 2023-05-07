@@ -2,27 +2,16 @@ baseurl: https://vasco.guita.org
 languageCode: en-us
 paginate: 5
 title: Vasco Guita
-DefaultContentLanguage: en
-hasCJKLanguage: false
 disqusShortname: vascoguita
-favicon: /favicon.ico
 
 markup:
-  goldmark:
-    renderer:
-      unsafe: false
   tableOfContents:
     endLevel: 4
     ordered: true
-    startLevel: 2
   highlight:
     noClasses: false
-    codeFences: true
     guessSyntax: true
-    lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: true
-    tabWidth: 4
 
 menu:
   social:
@@ -62,28 +51,12 @@ module:
     - path: github.com/CaiJimmy/hugo-theme-stack/v3
 
 params:
-  mainSections:
-    - post
-  rssFullContent: true
+  favicon: /favicon.ico
   footer:
     since: 2023
-    customText: ""
-  dateFormat:
-    published: Jan 02, 2006
-    lastUpdated: Jan 02, 2006 15:04 MST
   sidebar:
     emoji: 🚀
     subtitle: Software Engineer at CERN with a passion for traveling and making stuff
-    avatar:
-      enabled: true
-      local: true
-      src: img/avatar.jpg
-  article:
-    math: false
-    readingTime: true
-    license:
-      enabled: true
-      default: Licensed under CC BY-NC-SA 4.0
   widgets:
     homepage:
       - type: search
@@ -98,89 +71,6 @@ params:
           limit: 10
     page:
       - type: toc
-  opengraph:
-    twitter:
-      site: ""
-      card: summary_large_image
-  defaultImage:
-    opengraph:
-      enabled: false
-      local: false
-      src: ""
-  colorScheme:
-    toggle: true
-    default: auto
-  imageProcessing:
-    cover:
-      enabled: true
-    content:
-      enabled: true
-  comments:
-    enabled: true
-    provider: disqus
-    disqusjs:
-      shortname: ""
-      apiUrl: ""
-      apiKey: ""
-      admin: ""
-      adminLabel: ""
-    utterances:
-      repo: ""
-      issueTerm: pathname
-      label: ""
-    remark42:
-      host: ""
-      site: ""
-      locale: ""
-    vssue:
-      platform: ""
-      owner: ""
-      repo: ""
-      clientId: ""
-      clientSecret: ""
-      autoCreateIssue: false
-    waline:
-      serverURL: ""
-      lang: ""
-      visitor: ""
-      avatar: ""
-      emoji:
-        - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
-      requiredMeta:
-        - name
-        - email
-        - url
-      placeholder: ""
-      locale:
-        admin: Admin
-    twikoo:
-      envId: ""
-      region: ""
-      path: ""
-      lang: ""
-    cactus:
-      defaultHomeserverUrl: https://matrix.cactus.chat:8448
-      serverName: cactus.chat
-      siteName: ""
-    giscus:
-      repo: ""
-      repoID: ""
-      category: ""
-      categoryID: ""
-      mapping: ""
-      lightTheme: ""
-      darkTheme: ""
-      reactionsEnabled: 1
-      emitMetadata: 0
-    gitalk:
-      owner: ""
-      admin: ""
-      repo: ""
-      clientID: ""
-      clientSecret: ""
-    cusdis:
-      host: ""
-      id: ""
 
 permalinks:
   post: /p/:slug/
@@ -189,7 +79,6 @@ permalinks:
 related:
   includeNewer: true
   threshold: 60
-  toLower: false
   indices:
     - name: tags
       weight: 100
