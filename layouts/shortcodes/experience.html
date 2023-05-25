@@ -1,0 +1,44 @@
+<style>
+    .article-content table {
+        width: initial;
+    }
+
+    .article-content th, .article-content td {
+        border: none;
+    }
+
+    .article-content tr:nth-child(2n) {
+        background-color: initial;
+    }
+
+    p.date, p.location {
+        color: rgba(0,0,0,.6);
+    }
+
+    .article-content h3, .article-content p {
+        margin-inline-start: initial;
+        padding-inline-start: initial;
+        border-inline-start: initial;
+        line-height: initial;
+        margin: initial;
+    }
+
+</style>
+
+<table>
+    <tr>
+        <td><img src="{{ .Get `logo` }}" style="height:6.8rem;"></td>
+        <td>
+            <h3>{{ .Get "title" }}</h3>
+            <p>{{ .Get "company" }}</p>
+            <p class="date">{{ .Get "start" }} - {{ if (.Get "end") }}{{ .Get "end" }}{{ else }}present{{ end }}</p>
+            <p class="location">{{ .Get "location" }}</p>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            {{ .Inner | markdownify }}
+        </td>
+    </tr>
+</table>
