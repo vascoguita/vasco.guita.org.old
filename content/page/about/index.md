@@ -31,6 +31,7 @@ Present Jaeger tracing at CERN at IT Lightning Talks #22.
 
 {{< /experience >}}
 
+***
 
 {{< experience title="Software Engineer" company="MARETEC" logo="maretec.jpg" start="Feb 2021" end="Sep 2021" location="Lisbon, Portugal" >}}
 
@@ -38,6 +39,7 @@ Develop bathymetry plugin for QGIS in Python and Qt.
 
 {{< /experience >}}
 
+***
 
 {{< experience title="Teaching Assistant" company="Instituto Superior Técnico, Universidade de Lisboa" logo="ist.jpeg" start="Sep 2020" end="Feb 2021" location="Lisbon, Portugal" >}}
 
@@ -49,6 +51,7 @@ Support students in office hours.
 
 {{< /experience >}}
 
+***
 
 {{< experience title="System Administrator" company="Instituto Superior Técnico, Universidade de Lisboa" logo="ist.jpeg" start="Dec 2017" end="Sep 2019" location="Lisbon, Portugal" >}}
 

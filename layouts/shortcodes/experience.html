@@ -1,0 +1,10 @@
+<div class="experience">
+  <img src="{{ .Get `logo` }}">
+  <div>
+    <h4>{{ .Get "title" }}</h4>
+    <p>{{ .Get "company" }}</p>
+    <p>{{ .Get "start" }} - {{ if (.Get "end") }}{{ .Get "end" }}{{ else }}present{{ end }}</p>
+    <p>{{ .Get "location" }}</p>
+    {{ .Inner | markdownify }}
+  </div>
+</div>
